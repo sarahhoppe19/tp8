@@ -5,6 +5,7 @@
 $name = $_GET["recipeName"];
 $list = $_GET["recipeList"];
 
+//start of if statement for first recipe
 if ($name == "Mushroom Salsa Chili")
 {
   if ($list == "ingredients")
@@ -21,9 +22,11 @@ if ($name == "Mushroom Salsa Chili")
     
   } else 
   {
+    //default else in case something doesn't work to prevent breaking
     echo "1";
   }
-  
+
+ //continued if statement using elseif for second recipe
 } elseif ($name == "Basic Crepes")
 {
     if ($list == "ingredients")
@@ -40,9 +43,11 @@ if ($name == "Mushroom Salsa Chili")
     
   } else 
   {
+      //default else in case something doesn't work to prevent breaking
     echo "2";
   }
 
+//continued if statement using another elseif for third recipe
 } elseif ($name == "Old Fashioned Pancakes")
 {
     if ($list == "ingredients")
@@ -59,6 +64,7 @@ if ($name == "Mushroom Salsa Chili")
     
   } else 
   {
+      //default else in case something doesn't work to prevent breaking
     echo "3";
   }
   
